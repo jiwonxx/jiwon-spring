@@ -7,6 +7,6 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<bean id="greeter" class="spring5.chap02.Greeter" />
+	<bean id="greeter" class="com.jiwon.spring.Greeter" />
 
 </beans>
