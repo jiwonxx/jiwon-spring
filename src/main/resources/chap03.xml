@@ -9,14 +9,14 @@
 
 	<bean id="memberDao" class="com.jiwon.jdbc.chap03.MemberDao" />
 
-	<!-- dependency injection by constructor -->
-	<!-- <bean id="memberRegisterService"
-		class="com.jiwon.jdbc.chap03.MemberRegisterService">
+	<!-- dependency injection by constructor 
+	<bean id="memberRegisterService"
+		class="org.Eunbin.book.chap03.MemberRegisterService">
 		<constructor-arg ref="memberDao" />
 	</bean> -->
 
 	<!-- dependency injection by setter -->
-	 
+	
 	<bean id="memberRegisterService"
 		class="com.jiwon.jdbc.chap03.MemberRegisterService">
 		<property name="memberDao" ref="memberDao"/>
