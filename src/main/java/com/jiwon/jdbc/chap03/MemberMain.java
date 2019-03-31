@@ -10,7 +10,7 @@ public class MemberMain {
 		// registerRequest 초기화
 		RegisterRequest req = new RegisterRequest();
 		req.setEmail("jiwonx_x_@naver.com");
-		req.setPassword("1002");
+		req.setPassword("xxxx");
 		req.setName("jiwon");
 
 		// 회원 등록
