@@ -25,7 +25,7 @@ dependencies {
 task docs (dependsOn: javadoc, type: Copy) {
 	from 'build/docs/javadoc'
 	into 'docs'
-}
+} 
 
 task runNormalMain(type: JavaExec) {
 	main = 'com.jiwon.spring.NormalMain'
@@ -46,3 +46,10 @@ task runMemberMainUsingSpring(type: JavaExec) {
 	main = 'com.jiwon.jdbc.chap03.MemberMainUsingSpring'
 	classpath =  sourceSets.main.runtimeClasspath
 }
+
+
+task runMemberMainUsingComponentScan(type: JavaExec) {
+	main = 'com.jiwon.jdbc.chap04.MemberMainUsingComponentScan'
+	classpath =  sourceSets.main.runtimeClasspath
+}
+
